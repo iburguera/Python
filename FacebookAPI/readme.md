@@ -1,6 +1,6 @@
 ## DESCARGAR IMAGENES DE FACEBOOK CON PYTHON
 
-El siguiente script está programado para descargarse todas las fotos de tu usuario en Facebook.
+El siguiente script está programado para descargarse todas las fotos de tu usuario en Facebook a un directorio local
 
 
 ### Antes de ejecutar el script
