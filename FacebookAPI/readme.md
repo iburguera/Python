@@ -20,4 +20,11 @@ El siguiente script está programado para descargarse todas las fotos de tu usua
     2. Nos devuelve un string en formato **JSON** y podemos obtener la URL de las fotos de cada ALBUM 
   3. Extraemos las **URL** y nos descargamos las fotos utilizando la libreria **URLLIB** 
 
+### BUGS 
+ - [x] Por defecto Facebook solo nos muestra 25 objetos de JSON. Se arregla poniendo **limit=1000** en la URL de peticion 
+ - [] No deja obtener más de 100 objetos
+### MEJORAS
+ - [] Crear carpetas y meter las fotos dentro (Ahora las almacena en una misma ubicacion) El nombre de las fotos contiene el Album al que pertenece
+ - [] Utilizar la opcion PAGING NEXT de la respuesta JSON para saber la siguiente URL y obtener los datos de forma iterativa hasta que no haya una siguiente pagina. Por cada pagina obtendriamos 25 valores
+
 
