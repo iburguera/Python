@@ -20,7 +20,7 @@ def printIP(ip):
 
 def getIP():
 	response = urllib2.urlopen('http://jsonip.com/')
-	data = json.load(response)                            # Response -> {"ip":"85.85.234.35","about":"/about","Pro!":"http://getjsonip.com"}
+	data = json.load(response)                            # Response -> {"ip":"XX.XX.XX.XX","about":"/about","Pro!":"http://getjsonip.com"}
 	printIP(str(data['ip']))
 	#print json.dumps(data, indent=4, sort_keys=True)     # Esto es para imprimirlo bonito por consola
 
