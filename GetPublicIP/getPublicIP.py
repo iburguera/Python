@@ -1,5 +1,5 @@
 #--------------------------------------------------------------
-#		       SCRIPT PARA OBTENER IP PUBLICA con JSON
+#      SCRIPT PARA OBTENER IP PUBLICA con JSON y PYTHON
 #--------------------------------------------------------------
 # 
 # Author  : Iker Burguera
