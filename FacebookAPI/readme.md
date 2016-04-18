@@ -1,6 +1,10 @@
 ## DESCARGAR IMAGENES DE FACEBOOK CON PYTHON
 
-El siguiente script está programado para descargarse todas las fotos de tu usuario en Facebook a un directorio local
+El siguiente script está programado para descargarse todas las fotos de tu usuario en Facebook a un directorio local.
+Hay algunos bugs y mejoras que se le pueden hacer al programa (ver sección BUGS & MEJORAS) pero funciona bien.
+
+IMPORTANTE: El Script no funciona si no tienes el TOKEN o se ha caducado. El TOKEN que obtenemos es de corta duración por lo que normalmente durará una hora más o menos (https://developers.facebook.com/docs/facebook-login/access-tokens)
+
 
 
 ### Antes de ejecutar el script
