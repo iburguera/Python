@@ -2,6 +2,10 @@
 #		       SCRIPT PARA DESCARGARSE IMAGENES DE FACEBOOK
 #----------------------------------------------------------------------------
 # 
+# Author  : Iker Burguera
+# Date    : 18/04/2016
+# Version : 1.0
+#
 # 1- Obtener el ACCESS TOKEN de la siguiente direccion : 
 #      - https://developers.facebook.com/tools/explorer/
 #      - Elegir 
