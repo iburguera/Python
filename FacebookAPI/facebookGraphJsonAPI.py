@@ -3,7 +3,8 @@
 #----------------------------------------------------------------------------
 # 
 # 1- Obtener el ACCESS TOKEN de la siguiente direccion : 
-#      - https://developers.facebook.com/tools/explorer/145634995501895/
+#      - https://developers.facebook.com/tools/explorer/
+#      - Elegir 
 #
 # 2- Obtener los ALBUMES que tienes en Facebook
 #      - https://graph.facebook.com/me/albums?access_token=<TU_TOKEN>
@@ -14,15 +15,12 @@
 #----------------------------------------------------------------------------
 
 import urllib2
-import json
 import urllib
+import json
 import time
-from random import randint
 
 access_token 	= "<TU TOKEN>"
-album_URL		= "https://graph.facebook.com/me/albums?access_token=%s" % access_token
-
-
+album_URL	= "https://graph.facebook.com/me/albums?access_token=%s" % access_token
 
 def printAlbums(albums,lengthAlbum):
 	""" Funcion para mostrar las propiedades de cada album """
@@ -48,7 +46,7 @@ def printPicturesURL(albumID,albumName,lengthPictures):
 		downloadAlbumPictures(albumName,unparsedPicture,str(albumID['data'][picture]['id']),cont)
 		cont+=1
 	print ""
-	print "Obtained picture counter : " + str(cont)
+	print "Contador imagenes obtenidas : " + str(cont)
 
 def getAlbums(albums):
 	""" Funcion para obtener todos los albumes de Facebook."""
@@ -69,8 +67,6 @@ def getPictures(albumID,albumName):
 	data = json.load(response) 
 	printPicturesURL(data,albumName,len(data['data'])) 
 
-    #https://graph.facebook.com/1650003803851/photos?access_token=CAACEdEose0cBAENNpoRUQ8V7yZC1DRZCyhkjdF6O2jctYsqHr6srsKNsxZB0YSBhIMvwdau4qXYGera7mzSTNhWLLlZBUZBJX2FUPoVJJZABDjOcwoBfWFH2Xl3TjJEUCo2ZAnKTGBvdgNPYf4L67ZAaB9acRPQZCnR63fJrMVaBF6sXGBH0CBYewVSRKvu6NVsu412FqqlgHTQnzo7eXs8h0
-
 def downloadAlbumPictures(albumName,pictureURL,pictureID,cont):
 		name = ""+albumName+"-"+pictureID+"-"+str(cont)+".jpg"
 		f = open(name,'wb')
@@ -78,5 +74,6 @@ def downloadAlbumPictures(albumName,pictureURL,pictureID,cont):
 		f.close()
 		time.sleep(.5)
 
+#Main
 
 getAlbums(album_URL)
