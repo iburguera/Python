@@ -6,16 +6,7 @@
 # Date    : 18/04/2016
 # Version : 1.0
 #
-# 1- Obtener el ACCESS TOKEN de la siguiente direccion : 
-#      - https://developers.facebook.com/tools/explorer/
-#      - Elegir 
-#
-# 2- Obtener los ALBUMES que tienes en Facebook
-#      - https://graph.facebook.com/me/albums?access_token=<TU_TOKEN>
-#      - Nos devuelve el ALBUM_ID de cada ALBUM en formato JSON
-#
-# 3- Obtener las FOTOS de cada ID del Album
-#      - https://graph.facebook.com/<ALBUM_ID>/photos?access_token=<TU_TOKEN>
+# Note    : Read README.MD For further instructions
 #----------------------------------------------------------------------------
 
 import urllib2
@@ -23,7 +14,7 @@ import urllib
 import json
 import time
 
-access_token 	= "<TU TOKEN>"
+access_token 	= "<FACEBOOK_TOKEN>"
 album_URL	= "https://graph.facebook.com/me/albums?access_token=%s" % access_token
 
 def printAlbums(albums,lengthAlbum):
@@ -43,7 +34,6 @@ def printAlbums(albums,lengthAlbum):
 def printPicturesURL(albumID,albumName,lengthPictures):										
 	""" Funcion para mostrar las URL de de las imagenes segun el Album ID"""
 	cont = 0
-
 	for picture in range(0,lengthPictures):
 		unparsedPicture = albumID['data'][picture]['source']
 		print "\t [-] " + albumID['data'][picture]['source']
@@ -72,11 +62,11 @@ def getPictures(albumID,albumName):
 	printPicturesURL(data,albumName,len(data['data'])) 
 
 def downloadAlbumPictures(albumName,pictureURL,pictureID,cont):
-		name = ""+albumName+"-"+pictureID+"-"+str(cont)+".jpg"
-		f = open(name,'wb')
-		f.write(urllib.urlopen(pictureURL).read())
-		f.close()
-		time.sleep(.5)
+	name = ""+albumName+"-"+pictureID+"-"+str(cont)+".jpg"
+	f = open(name,'wb')
+	f.write(urllib.urlopen(pictureURL).read())
+	f.close()
+	time.sleep(.5)
 
 #Main
 
