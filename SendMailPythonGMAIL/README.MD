@@ -7,4 +7,4 @@
   
 ### Settings 
 1. **ENABLE** access to **Less secure applications** in the following address:
-  1.https: //www.google.com/settings/security/lesssecureapps
+  1.https://www.google.com/settings/security/lesssecureapps
