@@ -5,7 +5,7 @@ Este script intenta adivinar el password de un Hash que hemos introducido en la 
 
 ## Pasos antes de ejecutar el script
 
-1. Necesitamos descargarnos el diccionario con el que vamos a probar los Hashes  (Nosotros homes bajado el rockyou.txt)
+1. Necesitamos descargarnos el diccionario con el que vamos a probar los Hashes  (Nosotros hemos bajado el rockyou.txt)
   - https://wiki.skullsecurity.org/Passwords 
 2. Ejecutamos el siguiente código 
 ```
