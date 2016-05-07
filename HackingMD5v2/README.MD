@@ -17,4 +17,4 @@ md5pythonHash_v2.py 	--hash [md5Hash]	 --dictionary [dictionaryPath]
 ```
 md5pythonHash_v2.py 	--hash e9fd4cddf2a027fabb7217f3623d531a	 --dictionary rockyou.txt
 ```
-4. Esperar que encuentre un Match :)
+Esperar que encuentre un Match :)
