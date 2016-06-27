@@ -8,8 +8,8 @@ import time
 	Después de analizarlo con el debugger GDB, hemos observado que el programa testea la 
 	licencia introducida con la suma de los caracteres introducidos hasta llegar al valor 916.
 
-	Hacemos un simple script para concatenar caracteres random y hacer que su valor sea
-	el valor de comparacion de la licencia del programa, es decir, 916.
+	Hacemos un simple script para concatenar caracteres random y hacer que la suma de los
+	caracteres concatenados sea el valor de comparacion de la licencia del programa, es decir, 916.
 
 	Iker Burguera
 """
