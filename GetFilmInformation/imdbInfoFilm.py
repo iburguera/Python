@@ -8,7 +8,6 @@
 # Date    : 19/07/2016
 # Version : 1.0
 #
-# Note    : Read README.MD For further instructions
 #--------------------------------------------------------------
 # http://www.omdbapi.com/?t=<film>&y=&plot=full&r=json
 #--------------------------------------------------------------
