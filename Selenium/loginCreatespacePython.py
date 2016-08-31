@@ -5,7 +5,7 @@
 #	|-----------------------------------------------|
 #	|[+] Selenium WebBrowser Python Script Example  |
 #	|[+] Written by: Iker Burguera                  |
-#	|[+] Version: 4.0                               |
+#	|[+] Version: 1.0                               |
 #	|[+] Email me @: ikerburguera@gmail.com         |
 #	|-----------------------------------------------|
 # 
