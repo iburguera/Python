@@ -22,7 +22,7 @@ def menu():
 	print "-"*60
 
 def opcion_elegida(opcion):
-	if 	 opcion == 0:
+	if   opcion == 0:
 	    print (random_string_digitos(int(longitud)))
 	elif opcion == 1: 
 	    print (random_string_minusculas(int(longitud)))
