@@ -17,7 +17,10 @@ def menu():
 	print "Example: Generate  10 strings of 5 length Digits+Uppercase(3) string " 
 	print ">>>"
 	print ">>> python generate2.py 10 5 3"
-	print ">>> A4TBS"
+	print ">>> 76XZE"
+	print ">>> TAD5I"
+	print ">>> R8HQN"
+	print ">>> CYPZF"
 	print " "
 	print "-"*60
 
