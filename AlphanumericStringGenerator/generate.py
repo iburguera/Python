@@ -63,8 +63,7 @@ def random_string_digitos__digitos_mayusculas_minusculas(length):								# Opcio
 
 if len(sys.argv)>1:
 	longitud 	= sys.argv[1]
-	numero		= sys.argv[2]
-	opcion 		= sys.argv[3]
+	opcion 		= sys.argv[2]
 	opcion_elegida(int(opcion))
 else:
 	menu()
