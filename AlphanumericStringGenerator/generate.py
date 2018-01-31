@@ -1,6 +1,5 @@
 import random, string, sys
 
-
 def menu():
 	''' Menu option showing the usage of the script'''
 	print "-"*60
